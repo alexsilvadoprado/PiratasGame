@@ -12,5 +12,9 @@ public class Principal extends AGActivityGame
         super.onCreate(savedInstanceState);
 
         init(this, true);
+
+        TelaMenu tela_menu = new TelaMenu(this.vrManager);
+
+        vrManager.addScene(tela_menu);
     }
 }
